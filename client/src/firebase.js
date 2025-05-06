@@ -3,7 +3,7 @@ import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 import { getMessaging, getToken, onMessage } from 'firebase/messaging';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAj5mh04fawGL2v8HEQ1sygQ2oYWTofEhM",
+  apiKey: "AIzaS###################M",
   authDomain: "dam-cb1a7.firebaseapp.com",
   projectId: "dam-cb1a7",
   storageBucket: "dam-cb1a7.appspot.com",
