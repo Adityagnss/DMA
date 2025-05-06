@@ -1,0 +1,293 @@
+.product-details {
+  margin-top: 30px !important;
+}
+
+.product-details-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-details-info h6 {
+  margin-bottom: 20px !important;
+}
+
+.similar-products {
+  margin-top: 20px;
+}
+
+.similar-products .card {
+  background-color: rgba(128, 128, 128, 0.097);
+  width: 18rem;
+}
+
+.similar-products .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.similar-products .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.similar-products button {
+  border-radius: 0;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.similar-products .card-text {
+  color: rgb(90, 89, 89);
+}
+
+.similar-products .card img:hover {
+  transform: scale(0.9);
+}
+
+.similar-products .card-img-top {
+  height: 300px !important;
+}
+
+/* Stock Status Styles */
+.stock-status {
+  margin-bottom: 15px;
+}
+
+.in-stock {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+.sold-out {
+  color: #f44336;
+  font-weight: bold;
+}
+
+/* Farmer Info Styles */
+.farmer-info {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.farmer-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.farmer-actions .btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Enhanced Farmer Info Card Styles */
+.farmer-info-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+
+.farmer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.farmer-avatar {
+  margin-right: 15px;
+}
+
+.farmer-details h4 {
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.farmer-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.farmer-rating span {
+  margin-left: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+.farmer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Button Icon Styling */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.btn-icon svg {
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+/* Prevent rendering errors with icons */
+button svg, a svg {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Chat Modal Styles */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.messages-area {
+  flex: 1;
+  overflow-y: auto;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-bubble {
+  max-width: 70%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 18px;
+  position: relative;
+}
+
+.message-bubble.sent {
+  align-self: flex-end;
+  background-color: #0084ff;
+  color: white;
+  border-bottom-right-radius: 5px;
+}
+
+.message-bubble.received {
+  align-self: flex-start;
+  background-color: #e5e5ea;
+  color: #333;
+  border-bottom-left-radius: 5px;
+}
+
+.message-content {
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.message-time {
+  font-size: 11px;
+  opacity: 0.7;
+  text-align: right;
+}
+
+.message-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-form {
+  width: 100%;
+  display: flex;
+}
+
+.message-input-field {
+  flex: 1;
+}
+
+/* Default image styling */
+img.default-product-img {
+  object-fit: contain !important;
+  background-color: #f9f9f9;
+}
+
+/* Loading Container */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.loading-container p {
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Stock Status */
+.stock-info {
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+.stock-status.in-stock {
+  color: #28a745;
+}
+
+.stock-status.out-of-stock {
+  color: #dc3545;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.quantity-selector label {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.quantity-selector input {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .farmer-actions {
+    flex-direction: column;
+  }
+  
+  .message-bubble {
+    max-width: 85%;
+  }
+  
+  .product-details {
+    margin-top: 10px !important;
+  }
+}

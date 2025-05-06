@@ -1,0 +1,26 @@
+/* Message badge styling */
+.nav-link .ant-badge {
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.nav-link .ant-badge-count {
+  box-shadow: 0 0 0 1px #52c41a;
+  font-weight: bold;
+}
+
+.message-icon-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Active link styling */
+.nav-link.active {
+  font-weight: bold;
+  color: #198754 !important;
+}
+
+/* Messages link with icon */
+.nav-link .d-flex {
+  gap: 5px;
+}
