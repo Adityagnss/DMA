@@ -15,12 +15,18 @@ import reservationRoutes from "./routes/reservationRoutes.js";
 import cors from "cors";
 import http from "http";
 import { Server } from "socket.io";
+import path from "path";
+import { fileURLToPath } from "url";
 
 //configure env
 dotenv.config();
 
 //database config
 connectDB();
+
+// ES module fix for __dirname
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 //rest object
 const app = express();
@@ -77,10 +83,21 @@ app.use("/api/v1/notifications", notificationRoutes);
 app.use("/api/v1/review", reviewRoutes);
 app.use("/api/v1/reservations", reservationRoutes);
 
-//rest api
-app.get("/", (req, res) => {
-  res.send("<h1>Welcome to ecommerce app</h1>");
-});
+// Serve static files in production
+if (process.env.NODE_ENV === "production") {
+  // Set static folder
+  app.use(express.static(path.join(__dirname, "client/build")));
+
+  // All routes that are not API will be handled by the React app
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+} else {
+  //rest api for development
+  app.get("/", (req, res) => {
+    res.send("<h1>Welcome to ecommerce app</h1>");
+  });
+}
 
 //PORT
 const PORT = process.env.PORT || 8080;
