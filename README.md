@@ -1,6 +1,6 @@
-# AgriMart
+# DMA - DIRECT MARKET ACCESS 
 
-AgriMart revolutionizes the way you buy and sell agricultural products. Connect directly with farmers, access fresh produce, and enjoy a seamless shopping experience. Empowering farmers, enhancing access. AgriMart – your farm-to-table solution.
+DMA revolutionizes the way you buy and sell agricultural products. Connect directly with farmers, access fresh produce, and enjoy a seamless shopping experience. Empowering farmers, enhancing access. DMA – your farm-to-table solution.
 
 ## Table of Contents
 
@@ -18,7 +18,7 @@ AgriMart revolutionizes the way you buy and sell agricultural products. Connect 
 
 ## Project Overview
 
-AgriMart is a MERN stack project aimed at connecting consumers directly with farmers to buy and sell agricultural products. This platform enhances access to fresh produce and empowers farmers by providing a direct sales channel.
+DMA is a MERN stack project aimed at connecting consumers directly with farmers to buy and sell agricultural products. This platform enhances access to fresh produce and empowers farmers by providing a direct sales channel.
 
 ## Features
 
@@ -84,7 +84,7 @@ To set up the project locally, follow these steps:
 
 ## Usage
 
-- Visit `http://localhost:3000` to view the AgriMart frontend.
+- Visit `http://localhost:3000` to view the DMA frontend.
 - Register as a user to start buying or selling agricultural products.
 - Browse available products, add items to your cart, and complete your purchase.
 - Farmers can add new products to sell directly to consumers.
